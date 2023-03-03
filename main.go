@@ -41,7 +41,7 @@ func main() {
 	}
 	out := ""
 	for _, b := range input {
-		out += fmt.Sprintf("%%%x", b)
+		out += fmt.Sprintf("%%%02x", b)
 	}
 	fmt.Print(out)
 }
